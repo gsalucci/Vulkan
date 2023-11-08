@@ -2,5 +2,9 @@ version: '3'
 services:
   vulkan:
     image: mozempk/vulkan:latest
-    env_file:
-      - stack.env
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - SPOTIFY_ID=${SPOTIFY_ID}
+      - SPOTIFY_SECRET=${SPOTIFY_SECRET}
+      - BOT_PREFIX=${BOT_PREFIX}
+      - SHOULD_AUTO_DISCONNECT_WHEN_ALONE=${SHOULD_AUTO_DISCONNECT_WHEN_ALONE}

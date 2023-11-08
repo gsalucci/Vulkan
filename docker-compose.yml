@@ -2,3 +2,5 @@ version: '3'
 services:
   vulkan:
     image: mozempk/vulkan:latest
+    env_file:
+      - stack.env
